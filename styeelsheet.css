@@ -1,0 +1,302 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+}
+
+body{
+  padding-top:60px;
+  overflow-x:hidden;
+}
+
+/* NAVBAR */
+.nav-bar{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#f5f5f8;
+  padding:10px 0;
+  z-index:1000;
+}
+
+.nav-bar ul{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:25px;
+  list-style:none;
+}
+
+.nav-bar a{
+  text-decoration:none;
+  color:#111;
+  font-size:0.9rem;
+}
+
+.menu-icon{
+  display:none;
+  font-size:1.2rem;
+}
+
+/* TOP INFO */
+.top-info{
+  text-align:center;
+  padding:0px 10px 10px 10px;
+  font-size:0.85rem;
+}
+
+.top-info a{
+  color:#0071E3;
+  text-decoration:none;
+}
+
+/* HERO */
+.container{
+  height:600px;
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+  padding-top:40px;
+}
+
+.iphone-hd{
+  font-size:3rem;
+}
+
+.iphone-p{
+  font-size:1.5rem;
+  margin-top:10px;
+}
+
+.button-iphone{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  margin-top:25px;
+}
+
+button{
+  padding:8px 22px;
+  border:none;
+  border-radius:20px;
+  background:#0071E3;
+  color:white;
+  cursor:pointer;
+}
+
+.shop-iphone{
+  background:transparent;
+  color:#0071E3;
+  border:1px solid #0071E3;
+}
+
+.shop-iphone:hover{
+  background:#0071E3;
+  color:white;
+}
+
+/* BACKGROUNDS */
+.img1{ background-image:url(assets/asset\ 63.jpeg); }
+.img2{
+  background-image:url(assets/asset\ 65.jpeg);
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+}
+.img3{ background-image:url(assets/asset\ 67.jpeg); }
+
+.img2-text{
+  margin-bottom:40px;
+}
+
+.img-ipad{
+  width:200px;
+  margin:20px auto;
+  display:block;
+}
+
+/* GRID */
+.container2{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:10px;
+  padding:10px;
+}
+
+.container-box{
+  height:550px;
+  background-size:cover;
+  background-position:center;
+}
+
+.center{
+  text-align:center;
+  padding-top:30px;
+}
+
+.box1{ background-image:url(promo_airpodspro_3__f6xmza7bglei_large_2x.jpg); }
+.box2{ background-image:url(promo_apple_watch_series_11__b63hxviqvonm_large_2x.jpg); }
+.box3{ background-image:url(promo_ipad__fioegapg12qi_large_2x.jpg); }
+.box4{ background-image:url(promo_macbook_air__fqowrtnxewqe_large_2x.jpg); }
+.box5{ background-image:url(promo_iphone_tradein__bugw15ka691e_large_2x.jpg); }
+.box6{ background-image:url(promo_apple_card__5cm7draujpey_large_2x.jpg); }
+
+/* FOOTER */
+/* FOOTER */
+.apple-footer{
+  background:#f5f5f8;
+  padding:30px 20px;
+  font-size:0.8rem;
+  color:#555;
+}
+
+.footer-text{
+  max-width:1100px;
+  margin:auto;
+}
+
+.footer-text hr{
+  margin:15px 0;
+  border:0;
+  border-top:1px solid #ccc;
+}
+
+.footer-links{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:20px;
+}
+
+.footer-column h4{
+  font-size:0.9rem;
+  margin-bottom:10px;
+  color:#111;
+}
+
+.footer-column a{
+  display:block;
+  text-decoration:none;
+  color:#555;
+  margin-bottom:8px;
+}
+
+.footer-column a:hover{
+  text-decoration:underline;
+}
+
+.footer-bottom{
+  max-width:1100px;
+  margin:20px auto 0;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.footer-bottom a{
+  color:#555;
+  text-decoration:none;
+}
+
+.footer-bottom a:hover{
+  text-decoration:underline;
+}
+
+/* MOBILE FOOTER */
+@media (max-width:768px){
+  .footer-links{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+
+@media (max-width:480px){
+  .iphone-hd{
+    padding: 0px 0px;
+    position: relative;
+    top: -40px;
+
+  }
+  .iphone-p{
+    padding: 10px 0px;
+    position: relative;
+    top: -50px;
+
+  }
+  .button-iphone{
+    flex-direction:column;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+
+  }
+  .img2-text p{
+    position: relative;
+    top: 0px;
+  }
+  .img-ipad{
+    position: relative;
+    top: -40px;
+  }
+  .container2 .box1 p {
+    position: relative;
+    top: 10px;
+  }
+  .box3 h2{
+    position: relative;
+    top: 50px;
+  }
+  .box4 h2{
+    position: relative;
+    top: 50px;
+  }
+  .box5 h2{
+    position: relative;
+    top: 50px;
+  }
+  .box6 h2{
+    position: relative;
+    top: 50px;
+  }
+  .container2  button{
+    position: relative;
+    top: 40px;
+  }
+  .watch11 h2,p{
+    position: relative;
+    top: -20px;
+  }
+  .footer-links{
+    grid-template-columns:1fr;
+  }
+}
+
+
+/* RESPONSIVE */
+@media (max-width:768px){
+  .nb{ display:none; }
+  .menu-icon{ display:block; }
+  .nav-bar ul{
+    justify-content:space-between;
+    padding:0 15px;
+  }
+  .container2{
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width:480px){
+  .iphone-hd{ font-size:2rem; }
+  .iphone-p{ font-size:1.1rem; }
+  .container{ height:450px; }
+  .button-iphone{
+    flex-direction:column;
+  }
